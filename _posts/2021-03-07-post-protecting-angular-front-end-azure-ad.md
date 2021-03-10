@@ -1,6 +1,6 @@
 ---
 title: "Post: Protecting Angular Frontend with Azure Active Directory"
-last_modified_at: 2020-12-13T16:20:02-05:00
+last_modified_at: 2021-03-07T16:30:02+05:30
 classes: wide
 categories:
   - Blog
@@ -10,6 +10,8 @@ tags:
 ---
 
 This is a first part in the series of how to protect an application with Azure AD. Application contains angular based front end and .net core based webapi. 
+
+In this part we will be protecting front end developed in angular with Azure AD. We will use Microsoft Authentication Library(MSAL) to protect our application.
 
 We are going to be following below steps in this article
 
@@ -34,12 +36,11 @@ Lets start by following below steps for registering our website in Azure AD
 6. In **Supported Account Types"**, since we are developing this website as single tenant , we will Select **"Accounts in this organizational Directory only"**. With this configuration, only users only from your directory can login to this website. 
 7. In Redirect URI section, select **Single-page-application(SPA)**. Specify appropriate redirect uri where Azure AD should redirect user after successful login. In our case, we would just specify **"http://localhost:4200"**.
 ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/01-Protect-Angular/AppRegistration-02.png){: .align-center}
-8. From the overview section of the registered application, record **Application (client) ID
-** & **Directory (tenant) ID**. In my case, ApplicationId= 35cf9790-0ba2-4916-b348-032d308a3e99 & TenantId=1372c663-c4a5-4eef-8e1e-8af9c94ff77a.
+8. From the overview section of the registered application, record **Application (client) ID** & **Directory (tenant) ID**. In my case, ApplicationId= 35cf9790-0ba2-4916-b348-032d308a3e99 & TenantId=1372c663-c4a5-4eef-8e1e-8af9c94ff77a.
 
 ## 2. Download quick start angular application template
 
-You find many samples in below github repository for javascript based applications
+You can find many samples in below github repository for javascript based applications
 
 ```
 https://github.com/AzureAD/microsoft-authentication-library-for-js.git 
@@ -104,9 +105,6 @@ ng serve
 5. You can click on "Profile" button at the top to see some information from your Azure AD profile. Application basically does a "Graph Api" call using logged in user's credentials.
 
 
-Thats it!! You have an Angular website protected with Azure AD. 
+## Next Steps
 
-Join me in the next session for **protecting webapi hosted in Azure App Service using Azure AD**.
-
- 
-
+[Protecting Angular Website]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad)
