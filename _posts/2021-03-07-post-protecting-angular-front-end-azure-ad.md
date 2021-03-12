@@ -1,6 +1,7 @@
 ---
 title: "Post: Protecting Angular Frontend with Azure Active Directory"
 last_modified_at: 2021-03-07T16:30:02+05:30
+comments: true
 classes: wide
 categories:
   - Blog
