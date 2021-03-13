@@ -41,11 +41,16 @@ github: [metadata]
 include:
   - _pages
 
+# comments:
+#   provider: "utterances"
+#   utterances:
+#     theme: "github-light" # "github-light" (default), "github-dark"
+#     issue_term: "pathname" # "pathname" (default)
 comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light" # "github-light" (default), "github-dark"
-    issue_term: "pathname" # "pathname" (default)
+  provider: "disqus"
+  disqus: 
+    shortname: "jogikalpesh.github.io"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
