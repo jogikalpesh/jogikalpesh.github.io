@@ -1,5 +1,5 @@
 ---
-title: "Post: Protecting WebApi deployed in Azure App service with Azure Active Directory"
+title: "Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory"
 last_modified_at: 2021-03-08T20:43:02+05:30
 classes: wide
 categories:
@@ -147,7 +147,4 @@ On providing the right credentials, it will redirect to the App service again
 
 
 ## Next Steps
-Calling Azure AD protected webapi from Azure AD protected Angular webapp
-
-## Related Posts
-* [Protecting Angular Website]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-azure-ad)  
+[Part 3: Calling Azure AD protected webapi from Azure AD protected Angular webapp]({{ site.url }}{{ site.baseurl }}/blog/post-calling-webapi-from-angular-ui-azure-ad)

@@ -1,5 +1,5 @@
 ---
-title: "Post: Protecting Angular Frontend with Azure Active Directory"
+title: "Part 1: Protecting Angular Frontend with Azure Active Directory"
 last_modified_at: 2021-03-07T16:30:02+05:30
 comments: true
 classes: wide
@@ -108,4 +108,5 @@ ng serve
 
 ## Next Steps
 
-[Protecting Angular Website]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad)
+[Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad)
+[Part 3: Calling Azure AD protected webapi from Azure AD protected Angular webapp]({{ site.url }}{{ site.baseurl }}/blog/post-calling-webapi-from-angular-ui-azure-ad)
