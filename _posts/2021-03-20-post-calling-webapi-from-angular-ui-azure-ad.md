@@ -27,7 +27,7 @@ We will go through following steps in this article
 
 ## 1. Calling a webapi from Angular web application.
 
-We have created angular application [first part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-azure-ad). I have added a simple page to show the temperature values. This page is simply making a call to the webapi we have create in [second part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad) and it is showing the result on this page.
+We have created angular application [first part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-using-azure-ad). I have added a simple page to show the temperature values. This page is simply making a call to the webapi we have create in [second part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-using-azure-ad) and it is showing the result on this page.
 
 Both these applications are available in following github repository
 
@@ -67,7 +67,7 @@ Microsoft Graph, for example, has defined following set of scopes
 * Write to a user's calendar
 * Send mail as a user
 
-Similarly, we will also require to define a scope for our web api application. We have to define a scope in "Application registration" created for webapi in [second part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad).
+Similarly, we will also require to define a scope for our web api application. We have to define a scope in "Application registration" created for webapi in [second part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-using-azure-ad).
 
 To add a scope,
 
@@ -87,7 +87,7 @@ To add a scope,
 
 ## 3. Adding API permission.
 
-Now that webapi has exposed a scope, we have to add permission in web application for this scope. We have to do this in "Application Registration" created for web application in [first part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-azure-ad).
+Now that webapi has exposed a scope, we have to add permission in web application for this scope. We have to do this in "Application Registration" created for web application in [first part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-using-azure-ad).
 
 To add a permission,
 
@@ -111,7 +111,7 @@ As previously mentioned, After you have logged into Angular application. ID toke
 
 To achieve this,
 
-1. open folder corresponding to angular webapplication which was created in [first part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-azure-ad)
+1. open folder corresponding to angular webapplication which was created in [first part]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-using-azure-ad)
 2. open ```src->app->app.module.ts``` file
 3. Search for ```MSALInterceptorConfigFactory``` method.
 4. Add ```Protected Resoruce Map``` for webapi. It is specified in following format. Specify webapi url for ```<url>``` and ```scope``` we have created in previous section.
@@ -147,5 +147,5 @@ Keep browser's "developer tools" open. from the website, navigate to "weather" p
 * [https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad)
 
 ## Related Posts
-* [Part 1: Protecting Angular Frontend with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-azure-ad)  
-* [Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad)
+* [Part 1: Protecting Angular Frontend with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-using-azure-ad)  
+* [Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-using-azure-ad)

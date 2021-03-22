@@ -107,5 +107,5 @@ ng serve
 
 ## Next Steps
 
-[Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-azure-ad)
-[Part 3: Calling Azure AD protected webapi from Azure AD protected Angular webapp]({{ site.url }}{{ site.baseurl }}/blog/post-calling-webapi-from-angular-ui-azure-ad)
+* [Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-using-azure-ad)
+* [Part 3: Calling Azure AD protected webapi from Azure AD protected Angular webapp]({{ site.url }}{{ site.baseurl }}/blog/post-calling-webapi-from-angular-ui-azure-ad)
