@@ -146,6 +146,9 @@ Keep browser's "developer tools" open. from the website, navigate to "weather" p
 ## References
 * [https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad)
 
+## Next Steps
+[Part 4: Converting single-tenant application secured with Azure AD to allow sign ins from Multiple Azure AD tenants.]({{ site.url }}{{ site.baseurl }}/blog/post-converting-website-allow-multi-azure-ad)
+
 ## Related Posts
 * [Part 1: Protecting Angular Frontend with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-angular-front-end-using-azure-ad)  
 * [Part 2: Protecting WebApi deployed in Azure App service with Azure Active Directory]({{ site.url }}{{ site.baseurl }}/blog/post-protecting-webapi-app-service-using-azure-ad)
