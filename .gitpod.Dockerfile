@@ -5,3 +5,5 @@ RUN npm i -g azure-functions-core-tools@3 --unsafe-perm true
 
 # Install jest
 RUN brew update && brew install azure-cli
+
+RUN brew install kubectl
