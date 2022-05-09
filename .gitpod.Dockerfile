@@ -4,4 +4,4 @@ FROM gitpod/workspace-full
 RUN npm i -g azure-functions-core-tools@3 --unsafe-perm true
 
 # Install jest
-RUN npm i -g jest
+RUN brew update && brew install azure-cli
